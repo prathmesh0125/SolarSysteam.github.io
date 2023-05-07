@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+  }
+  .container {
+    font-size: 10px;
+    width: 40em;
+    height: 37em;
+    text-align: center;
+    margin-left: 33%;
+    position: relative;
+  }
+  .sun {
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    background-color: rgb(250, 56, 8);
+    border-radius: 50%;
+    box-shadow: 0 0 3em rgb(116, 98, 98);
+  }
+  /* <<<<<<--------------------MErscry ------------------>>>>>>>>>*/
+  /* venus */
+
+  .mercury {
+    top: 13em;
+    left: 13em;
+    width: 14em;
+    height: 14em;
+    /* height: 20em; */
+    animation: orbit 15.5s linear infinite;
+  }
+  .mercury::before {
+    top: 1.6em;
+    right: 1em;
+    width: 1em;
+    height: 1em;
+    background-color: rgb(32, 22, 7);
+    box-shadow: 0 0 1em white;
+  }
+  .venus {
+    top: 10em;
+    left: 10em;
+    width: 20em;
+    height: 20em;
+    animation: orbit 20.5s linear infinite;
+  }
+  .venus::before {
+    top: 1.8em;
+    right: 1.8em;
+    width: 2em;
+    height: 2em;
+    background-color: rgb(25, 0, 255);
+    box-shadow: 0 0 1em rgba(234, 241, 234, 0.877);
+  }
+  /* --------------------------earth ---------------------------->>>>>>> */
+  .earth,
+  .moon,
+  .venus,
+  .mercury,
+  .Jupitier,
+  .mars,
+  .saturn,
+  .shield,
+  .urnus,
+  .pluto {
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+    box-shadow: 0 0 1em rgba(234, 241, 234, 0.877);
+  }
+  .earth {
+    top: 5em;
+    left: 5em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 36.5s linear infinite;
+  }
+  .moon {
+    top: 0;
+    right: 0;
+    width: 8em;
+    height: 8em;
+    animation: orbit 3.7s linear infinite;
+  }
+  .earth::before,
+  .moon::before,
+  .venus::before,
+  .mercury::before,
+  .mars::before,
+  .Jupitier::before,
+  .saturn::before,
+  .shield::before,
+  .urnus::before,
+  .pluto::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+  }
+  .earth::before {
+    top: 2.8em;
+    right: 2.8em;
+    width: 3em;
+    height: 3em;
+    background-color: aqua;
+    box-shadow: 0 0 1em rgb(235, 225, 225);
+  }
+  .moon::before {
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: silver;
+  }
+
+  /*  */
+  /* mars */
+
+  .mars {
+    top: -3em;
+    left: -3em;
+    width: 47em;
+    height: 47em;
+    animation: orbit 30.5s linear infinite;
+  }
+  .mars::before {
+    top: 5.8em;
+    right: 5.8em;
+    width: 2em;
+    height: 2em;
+    background-color: rgb(252, 8, 8);
+    box-shadow: 0 0 1em rgb(235, 225, 225);
+  }
+
+  .Jupitier {
+    top: -10em;
+    left: -9em;
+    width: 59em;
+    height: 61em;
+    animation: orbit 46.5s linear infinite;
+  }
+  .Jupitier::before {
+    top: 7.8em;
+    right: 3.8em;
+    width: 6em;
+    height: 6em;
+    background-color: rgb(141 6 6);
+    box-shadow: 0 0 1em rgb(235, 225, 225);
+  }
+  /* <<<<<<---------saturn------->>>> */
+  .saturn {
+    top: -19em;
+    left: -19em;
+    width: 79em;
+    height: 79em;
+    animation: orbit 60.5s linear infinite;
+  }
+  .saturn::before {
+    top: 8.8em;
+    right: 7.8em;
+    width: 6em;
+    height: 6em;
+    background-color: rgb(141 6 6);
+    box-shadow: 0 0 3em rgb(235, 225, 225);
+  }
+  .shield {
+    top: 7em;
+    right: 6em;
+    width: 9em;
+    height: 9em;
+    animation: orbit 3.7s linear infinite;
+    box-shadow: 0 0 3em rgb(235, 225, 225);
+  }
+  .shield::before {
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+  }
+  /* <<<----------shield----------->>> */
+  .urnus {
+    top: -27em;
+    left: -28em;
+    width: 97em;
+    height: 97em;
+    animation: orbit 70.5s linear infinite;
+  }
+  .urnus::before {
+    top: 8.8em;
+    right: 12.8em;
+    width: 6em;
+    height: 6em;
+    background-color: rgb(59, 28, 116);
+    box-shadow: 0 0 2em rgb(235, 225, 225);
+  }
+  .pluto {
+    top: -38em;
+    left: -39em;
+    width: 120em;
+    height: 120em;
+    animation: orbit 80.5s linear infinite;
+  }
+  .pluto::before {
+    top: 12.8em;
+    right: 14.8em;
+    width: 6em;
+    height: 6em;
+    background-color: rgb(134, 46, 156);
+    box-shadow: 0 0 2em rgb(235, 225, 225);
+  }
+
+  @keyframes orbit {
+    to {
+      transform: rotate(360deg);
+    }
+  }
